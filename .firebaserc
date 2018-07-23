@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "staging": "copacul-incotroceni-dev",
+    "production": "copacul-incotroceni"
+  }
+}

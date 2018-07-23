@@ -1,0 +1,136 @@
+body { margin:0; padding:0; }
+
+#map { position:absolute; top:0; bottom:0; width:100%; }
+
+#marker {
+    cursor: pointer;
+}
+
+#marker path {
+    fill: red;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+}
+
+.loadingMessage .title {
+    color: #fff;
+    /*font-size: 16px;*/
+    font-family: sans-serif;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+
+  position: relative;
+  margin: 10px auto 40px;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+div.mapboxgl-popup-content {
+  padding: 30px 20px 30px;
+}
+
+button.mapboxgl-popup-close-button {
+  font-size: 35px;
+  left: 10px;
+  right: inherit;
+  z-index: 2;
+  display: none;
+}
+
+/* needs to be global not scoped */
+.notification.is-custom {
+  width: 100%;
+  max-width: 500px;
+  z-index: 2;
+  font-size: 1.3em;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.notification.is-custom .fa-2x {
+  font-size: 1.2em;
+}
+
+.mint-toast-pop-enter-active {
+  transition: top .35s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+  top: 0;
+}
+.mint-toast-pop-enter {
+  top: -80px;
+}
+.mint-toast-pop-leave {
+  top: -80px;
+}
+.mint-toast-pop-leave-active {
+  transition: top .35s;
+  top: 0;
+}
+
+.pg-loading-logo {
+  max-width: 200px;
+}
+
+.sponsors {
+  padding: 10px;
+  justify-content: center;
+  position: absolute;
+  /*width: 100%;*/
+  bottom: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .sponsors {
+    width: 100%;
+  }
+}
+
+.sponsors figure {
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.sponsors figure.image img {
+  margin: auto;
+}
+
+.sponsorsMessage {
+  color: #fff;
+  padding: 10px;
+}
