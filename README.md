@@ -2,7 +2,7 @@
 
 O aplicatie civica pentru raportarea starii arborilor stradali din cartierul Cotroceni.
 
-Aplicatia a putut fi accesata la [copacul.incotroceni.ro](https://copacul.incotroceni.ro) de pe toate dispozitivele dotate cu un [browser care suporta WebGL](http://caniuse.com/#feat=webgl)
+Aplicatia poate fi accesata la [copacul.incotroceni.ro](https://copacul.incotroceni.ro) de pe toate dispozitivele dotate cu un [browser care suporta WebGL](http://caniuse.com/#feat=webgl)
 
 ## Tech stack
 
